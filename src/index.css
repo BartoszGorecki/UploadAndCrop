@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* MainPage */
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+}
+
+.mainWrapper {
+  margin: 30px auto;
+  max-width: 80%;
+  width: 800px;
+}
+
+.imagesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 500px;
+  min-height: 400px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.imageWrapper {
+  align-items: center;
+  display: flex;
+  height: 160px;
+  margin: 10px;
+}
+
+.selectedImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 500px;
+}
+
+/* ImageCanvas */
+
+.btn {
+  background: white;
+  border: 1px solid #02b875;
+  border-radius: 3px;
+  color: #02b875;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  transition: 0.2s all;
+}
+
+.btn:hover {
+  background: #02b875;
+  color: white;
+}
+
+.btnBack {
+  margin: 5px 30px;
+}
+
+.canvasButtons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.canvasMainImage {
+  margin: auto;
+}
+
+.canvasTitle {
+  padding: 20px;
+  text-align: center;
+}
+
+.canvasWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryInput {
+  border: 1px solid #02b875;
+  height: 32px;
+  margin-right: 20px;
+}
+
+/* Category */
+
+.categoryHeader {
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.categoryImage {
+  align-self: center;
+  max-width: 100%;
+  margin: 5px 0;
+}
+
+.categorySquare {
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  width: 15px;
+}
+
+.categoryWrapper {
+  margin: 0 20px;
+}
+
+.imagesWrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .imagesContainer {
+    grid-template-columns: auto;
+  }
+  .imageWrapper {
+    height: auto;
+    margin: 10px auto;
+    width: 200px;
+  }
+}
